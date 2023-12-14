@@ -47,13 +47,9 @@ p {
 	<h3><u>My Cart</u></h3>
   
 	<?php
-		$servername = "";
-		$username = "";
-		$password = "";
-		$dbname = "";
 
 		// Create connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
+		$conn = new mysqli('localhost', 'root', '', 'NewarkITdb');
 		// Check connection
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);

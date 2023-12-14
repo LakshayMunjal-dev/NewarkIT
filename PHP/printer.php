@@ -68,13 +68,9 @@ p {
 	  </tr>
 	  
 	<?php
-		$servername = "";
-		$username = "";
-		$password = "";
-		$dbname = "";
 
 		// Create connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
+		$conn = new mysqli('localhost', 'root', '', 'NewarkITdb');
 		// Check connection
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
@@ -87,7 +83,8 @@ p {
 			while($row = $result->fetch_assoc()) {
 				if($row['OfferPrice'] == null) {
 					echo "<tr><td>".$row["PName"]."</td><td>$".$row["PPrice"]."</td><td>N/A</td><td>".$row["Description"]."</td><td>".$row["PrinterType"]."</td><td>".$row["Resolution"]."</td><td><form action='addToCart.php' method='post'> <input type='hidden' name='PID' value='".$row["PID"]."'/><input type='submit' value='Add to Cart' onclick='showMsg(".'"'.$row["PName"].'"'.");'/></form></td></tr>";
-				}else {
+				}
+				else {
 					echo "<tr><td>".$row["PName"]."</td><td>$".$row["PPrice"]."</td><td>$".$row["OfferPrice"]."</td><td>".$row["Description"]."</td><td>".$row["PrinterType"]."</td><td>".$row["Resolution"]."</td><td><form action='addToCart.php' method='post'> <input type='hidden' name='PID' value='".$row["PID"]."'/><input type='submit' value='Add to Cart' onclick='showMsg(".'"'.$row["PName"].'"'.");'/></form></td></tr>";
 				}
 			}

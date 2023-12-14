@@ -21,10 +21,10 @@ CCNumber VARCHAR (16) PRIMARY KEY,
 SecNumber INT (3) NOT NULL,
 OwnerName VARCHAR (20) NOT NULL,
 CCType VARCHAR(10) NOT NULL,
-BilAddress VARCHAR(50) NOT NULL,
+CCAddress VARCHAR(50) NOT NULL,
 ExpDate Date NOT NULL,
 StoredCardCID INT(10),
-FOREIGN KEY (StoredCardCID) REFERENCES CUSTOMER(CID);
+FOREIGN KEY (StoredCardCID) REFERENCES CUSTOMER(CID));
 
 
 Create table SILVER_AND_ABOVE (
@@ -100,13 +100,13 @@ INSERT INTO `CUSTOMER` (`CID`, `FName`, `LName`, `Email`, `Address`, `Phone`, `S
 ('1', 'Mohammad', 'Agha', 'ma@njit.edu', 'Clifton, NJ', '1111111111', 'Platinum');
 
 INSERT INTO `CUSTOMER` (`CID`, `FName`, `LName`, `Email`, `Address`, `Phone`, `Status`) VALUES 
-('2', 'Lakshay', 'Munjal', 'lm@njit.edu', 'Portland, OR', '2222222222', 'Gold');
+('2', 'Lakshay', 'Munjal', 'lm@njit.edu', 'Portland, OR', '1111111110', 'Gold');
 
 INSERT INTO `CUSTOMER` (`CID`, `FName`, `LName`, `Email`, `Address`, `Phone`, `Status`) VALUES 
-('3', 'Lalit', 'Rupani', 'lr@njit.edu', 'Miami, FL', '3333333333', 'Silver');
+('3', 'Lalit', 'Rupani', 'lr@njit.edu', 'Miami, FL', '1111111112', 'Silver');
 
 INSERT INTO `CUSTOMER` (`CID`, `FName`, `LName`, `Email`, `Address`, `Phone`, `Status`) VALUES 
-('4', 'Jane', 'Doe', 'jd@njit.edu', 'Newark, NJ', '4444444444', 'Regular');
+('4', 'Jane', 'Doe', 'jd@njit.edu', 'Newark, NJ', '1111111113', 'Regular');
 
 
 INSERT INTO `SILVER_AND_ABOVE` (`CID`, `CreditLine`) VALUES ('1', '25'), ('2', '15'), ('3', '5');
@@ -201,11 +201,10 @@ INSERT INTO `COMPUTER` (`PID`, `CPUType`) VALUES ('2', 'i5');
 INSERT INTO `COMPUTER` (`PID`, `CPUType`) VALUES ('3', 'p4');
 INSERT INTO `COMPUTER` (`PID`, `CPUType`) VALUES ('4', 'p2');
 
-INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('5', '180', '2.0');
-INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('6', '140', '2.5');
-INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('7', '200', '3.0');
-INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('8', '100', '1.0');
-INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('9', '300', '5.0');
+INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('1', '180', '2.0');
+INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('2', '140', '2.5');
+INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('3', '200', '3.0');
+INSERT INTO `LAPTOP` (`PID`, `BType`, `Weight`) VALUES ('4', '100', '1.0');
 
 INSERT INTO `PRINTER` (`PID`, `PrinterType`, `Resolution`) VALUES ('10', 'Inkjet', '1024x2048');
 INSERT INTO `PRINTER` (`PID`, `PrinterType`, `Resolution`) VALUES ('11', 'LaserJet', '1024x1024');
