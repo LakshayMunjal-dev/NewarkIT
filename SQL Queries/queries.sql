@@ -148,19 +148,16 @@ INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuant
 ('4', 'Computer', 'Pentium 2', '150', 'IBM 2nd Gen', '5');
 
 INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
-('5', 'Laptop', 'HP Notebook', '1000', 'HP Notebook 2nd Gen', '20');
+('1', 'Laptop', 'MacBook', '1200', 'MacBook Apple', '10');
 
 INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
-('6', 'Laptop', 'MacBook', '1200', 'MacBook Apple', '10');
+('2', 'Laptop', 'Dell Inspiron', '500', 'Dell Laptop', '15');
 
 INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
-('7', 'Laptop', 'Dell Inspiron', '500', 'Dell Laptop', '15');
+('3', 'Laptop', 'HP Pro Book', '1500', 'HP 2018 Probook 5GHz', '10');
 
 INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
-('8', 'Laptop', 'HP Pro Book', '1500', 'HP 2018 Probook 5GHz', '10');
-
-INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
-('9', 'Laptop', 'Sony SmartBook', '700', 'Sony SmartBook i5 3rd Gen', '5');
+('4', 'Laptop', 'Sony SmartBook', '700', 'Sony SmartBook i5 3rd Gen', '5');
 
 INSERT INTO `PRODUCT` (`PID`, `PType`, `PName`, `PPrice`, `Description`, `PQuantity`) VALUES 
 ('10', 'Printer', 'Intel Smart Printer', '500', 'Smart Printer 20 colors', '5');
