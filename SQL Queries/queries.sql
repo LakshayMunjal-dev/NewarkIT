@@ -219,3 +219,9 @@ INSERT INTO `offer_product` (`PID`, `OfferPrice`) VALUES ('5', '975');
 INSERT INTO `offer_product` (`PID`, `OfferPrice`) VALUES ('6', '1150');
 
 INSERT INTO `offer_product` (`PID`, `OfferPrice`) VALUES ('7', '425');
+
+INSERT INTO `APPEARS_IN` (`BID`, `PID`, `Quantity`, `PriceSold`) VALUES ('1', '3', '1', '300');
+INSERT INTO `APPEARS_IN` (`BID`, `PID`, `Quantity`, `PriceSold`) VALUES ('1', '19', '1', '75');
+INSERT INTO `APPEARS_IN` (`BID`, `PID`, `Quantity`, `PriceSold`) VALUES ('1', '20', '1', '100');
+
+INSERT INTO `TRANSACTION` (`BID`, `CCNumber`, `CID`, `SAName`, `TDATE`, `TTag`) VALUES ('1', '1234123412341234', '1', 'Home', '2018-07-10', 'D');
